@@ -1,11 +1,14 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <Navegacion />
   <router-view />
 </template>
 
+<script>
+import Navegacion from "@/components/Navegacion";
+export default {
+  components: { Navegacion },
+};
+</script>
 <style>
 body {
   background-color: #d6d6d6;
